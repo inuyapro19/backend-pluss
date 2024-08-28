@@ -1,0 +1,120 @@
+/********************************************************************/
+/************************** INDEX ***********************************/
+/********************************************************************/
+
+.contenedor-lista-destinos {
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/*padding-top: 20px;*/
+	padding: 25px 25px;
+}
+
+.destinos-lista {
+	width: 100%;
+}
+
+.destinos-lista h1 {
+	border-bottom: 2px solid #cccccc;
+}
+
+.cubos-lista-destinos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.cubo-lista {
+	width: 220px;
+	height: 220px;
+	border: 1px solid #cccccc;
+	margin-top: 10px;
+	position: relative;
+}
+
+.cubo-lista:hover {
+	transform: scale(0.95);
+	transition: all 0.2s ease-in-out;
+}
+
+.cubo-lista img {
+	width: 100%;
+	height: auto;
+	z-index: 8;
+}
+
+.cubo-lista img:hover {
+	opacity: 0.8;
+}
+
+.cubo-lista h2{
+	position: absolute;
+	left: 0px;
+	bottom: 20px;
+	background: rgba(255,255,255,0.7);
+	padding: 5px 10px;
+	width: 170px;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	color:#3b4064;
+	z-index: 9;
+}
+
+.cubo-lista h2:hover {
+	background: rgba(255,255,255,0.9);
+	color:#3b4064;
+}
+
+/****************************************/
+
+@media (max-width: 1199px) {
+
+.contenedor-lista-destinos {
+	max-width: 100%;
+}
+
+.destinos-lista {
+	width: 100%;
+	max-width: none;
+}
+
+.cubo-lista {
+	width: 180px;
+	height: auto;
+	border: none;
+	padding: 2px;
+}
+
+.cubo-lista h2 {
+	font-size: 15px;
+}
+}
+
+@media (max-width: 400px) {
+
+.contenedor-lista-destinos {
+	width: 100%;
+	max-width: 100%;
+}
+
+.cubos-lista-destinos {
+	width: 100%;
+	max-width: 100%;
+}
+
+.cubo-lista {
+	width: 120px;
+	height: auto;
+	padding: 1px;
+}
+
+.cubo-lista h2{
+	width: 100px;
+	font-size: 10px;
+}
+}

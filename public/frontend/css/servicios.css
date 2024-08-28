@@ -1,0 +1,138 @@
+.contenedor-servicio {
+	width: 100%;
+	max-width: 1160px;
+	margin: auto;
+	padding: 25px 20px;
+}
+
+.contenedor-servicio h1{
+	border-bottom: 2px solid #cccccc;
+	padding-top: 20px;
+}
+
+.contenedor-servicio p{
+	/*color: #666666;*/
+	padding: 10px 0px;
+	text-align: justify;
+}
+
+.contenedor-servicio ul{
+	padding-left: 40px;
+}
+
+.contenedor-servicio ul li{
+	padding: 5px;
+	color: #333333;
+	text-align: justify;
+}
+
+.contenedor-servicio h2{
+	font-style: italic;
+	color: #af9550;
+	display: block;
+	text-align: center;
+	padding: 15px;
+}
+
+.contenedor-servicio h3{
+	font-style: italic;
+	color: #3b4064;
+	display: block;
+	text-align: left;
+	padding: 5px 15px 0px 0px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+.contenedor-servicio img{
+	width: 100%;
+	height: auto;
+	border-radius: 25px;
+	padding: 10px;
+}
+
+.contenedor-servicio-flex {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.servicio-foto {
+	width: 100%;
+	max-width: 500px
+}
+
+.servicio-texto {
+	width: 100%;
+	padding-left: 20px;
+}
+
+.linea-punteada-servicio {
+	height: 5px;
+	border-bottom: 2px dashed #cccccc;
+	margin-top: 30px;
+	display: block;
+	width: 100%;
+}
+
+.bajada-desierto {
+	margin-bottom: -30px;
+	width: 100%;
+	height: 170px;
+	background-image: url(../imagenes/bajada-pagina.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom; 
+	overflow: hidden;
+}
+
+@media (max-width: 600px) {
+
+
+.contenedor-servicio p{
+	padding: 10px 10px;
+	text-align: left;
+	font-size: 11px;
+}
+.contenedor-servicio ul{
+	padding: 0px 20px 0px 30px;
+}
+
+.contenedor-servicio ul li{
+	text-align: left;
+	font-size: 11px;
+}
+
+.contenedor-servicio h2{
+	font-size: 16px;
+}
+
+.bajada-desierto {
+	width: 100%;
+	height: 170px;
+	background-size: 300%;
+}
+
+.contenedor-servicio-flex {
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+	margin: auto;
+	padding-top: 20px;
+}
+.servicio-texto {
+	width: 100%;
+	padding: 10px;
+}
+
+}
+
+
+@media (max-width: 400px) {
+
+.bajada-desierto {
+	width: 100%;
+	height: 170px;
+	background-size: 500%;
+}
+}

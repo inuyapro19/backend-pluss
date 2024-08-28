@@ -1,0 +1,615 @@
+@charset "utf-8";
+/* CSS Document By Fizz Estudio Gráfico - www.fizz.cl */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i');
+@import url("reseteo.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("politicas.css");
+@import url("oficinas.css");
+@import url("lista-destinos.css");
+@import url("destinos.css");
+@import url("buses.css");
+@import url("acomodaciones.css");
+@import url("contacto.css");
+@import url("servicios.css");
+@import url("clientes.css");
+
+
+
+
+/********************************************************************/
+/************************** INDEX ***********************************/
+/********************************************************************/
+
+.contenedor-destinos-ventajas {
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/*padding-top: 20px;*/
+	padding: 0px 25px;
+}
+
+.destinos-index {
+	width: 60%;
+	max-width: 650px;
+}
+
+.destinos-index h1 {
+	border-bottom: 2px solid #cccccc;
+}
+
+.cubos-destinos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.cubo {
+	width: 190px;
+	height: 190px;
+	max-width: 190px;
+	border: 1px solid #cccccc;
+	margin-top: 10px;
+	position: relative;
+}
+
+.cubo:hover {
+	transform: scale(0.95);
+	transition: all 0.2s ease-in-out;
+}
+
+.cubo img {
+	width: 100%;
+	height: auto;
+	z-index: 8;
+}
+
+.cubo img:hover {
+	opacity: 0.8;
+}
+
+.cubo h2{
+	position: absolute;
+	left: 0px;
+	bottom: 20px;
+	background: rgba(255,255,255,0.7);
+	padding: 5px 10px;
+	width: 170px;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	color:#3b4064;
+	z-index: 9;
+}
+
+.cubo h2:hover {
+	background: rgba(255,255,255,0.9);
+	color:#3b4064;
+}
+
+/************************/
+
+.ventajas-index {
+	width: 100%;
+	max-width: 450px;
+}
+
+.ventajas-index img {
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 15px;
+}
+
+.ventajas-index h1 {
+	border-bottom: 2px solid #cccccc;
+}
+
+.lista-ventajas {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.lista-ventajas div {
+	width: 50%;
+	max-width: 250px;
+	display: flex;
+	align-items: center;
+}
+
+.lista-ventajas span {
+	color: #b9a266;
+	font-size: 25px;
+	padding: 15px 0px;
+}
+
+.lista-ventajas p {
+	color: #666666;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/***************************************/
+
+@media (max-width: 1199px) {
+
+.contenedor-destinos-ventajas {
+	max-width: 100%;
+}
+
+.destinos-index {
+	width: 100%;
+	max-width: none;
+}
+
+.ventajas-index {
+	max-width: 100%;
+}
+
+.cubo {
+	width: 180px;
+	height: auto;
+	border: none;
+	padding: 2px;
+}
+
+.cubo h2 {
+	font-size: 15px;
+}
+
+.ventajas-index {
+	width: 100%;
+	max-width: 100%;
+	margin-top: 20px;
+}
+}
+
+@media (max-width: 400px) {
+
+.contenedor-destinos-ventajas {
+	width: 100%;
+	max-width: 100%;
+}
+
+.cubos-destinos {
+	width: 100%;
+	max-width: 100%;
+}
+
+.cubo {
+	width: 120px;
+	height: auto;
+	padding: 1px;
+}
+
+.cubo h2{
+	width: 100px;
+	font-size: 10px;
+}
+
+.lista-ventajas div {
+	width: 100%
+}
+
+
+.lista-ventajas span {
+	font-size: 16px;
+	padding-left: 5px;
+}
+
+.lista-ventajas p {
+	font-size: 12px;
+}
+
+}
+
+
+/********************************************************************/
+/************************** imagen scroll ***********************************/
+/********************************************************************/
+
+
+section.module.parallax {
+  padding: 50px 0;
+  margin: auto;
+  margin-top: 20px;
+  background-position: 0 0;
+}
+section.module.parallax h1 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  font-style: italic;
+  /*text-shadow: 0 0 10px white;*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+section.module.parallax-1 {
+  background-image: url("../imagenes/fondo-scroll.jpg");
+}
+
+/***************** iamgen scroll responsivo ***************************/
+
+@media all and (min-width: 600px) {
+  section.module.parallax {
+    padding: 50px 0;
+  }
+  section.module.parallax h1 {
+    font-size: 40px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 60px;
+  }
+    section.module.parallax {
+		background-position: 2000;
+	}
+
+}
+
+/********************************************************************/
+/************************** SEGURIDAD ***********************************/
+/********************************************************************/
+
+.contenedor-seguridad {
+	width: 100%;
+	background-image: linear-gradient(to bottom, #FCFCFC 0%, #DEDEDE 100%);
+	margin: 0px auto;
+}
+
+.contenedor-seguridad h1{
+	font-size: 40px;
+	text-align: center;
+	padding: 40px 50px 20px 50px;
+	line-height: 40px;
+}
+
+.contenedor-items-seguridad {
+	width: 100%;
+	max-width: 1100px;
+	margin: 10px auto;
+	padding: 0px 50px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.contenedor-items-seguridad article{
+	width: 100%;
+	max-width: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contenedor-items-seguridad p {
+	text-align: center;
+	color: #666666;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	padding: 20px 0px 40px 0px;
+}
+
+@media (max-width: 700px) {
+
+.contenedor-items-seguridad {
+	margin: 10px auto;
+	padding: 0px 20px;
+}
+
+.contenedor-seguridad h1{
+	font-size: 20px;
+	padding: 40px 20px 20px 20px;
+	line-height: 20px;
+}
+
+.contenedor-items-seguridad article {
+	width: 20%;
+	max-width: none;
+	padding: 0px 2px;
+}
+.contenedor-items-seguridad article img{
+	max-width: 100%;
+}
+
+.contenedor-items-seguridad p {
+	font-size: 16px;
+	padding: 20px 0px 40px 0px;
+}
+
+}
+
+@media (max-width: 400px) {
+	
+.contenedor-items-seguridad article {
+	width: 40%;
+	max-width: none;
+	padding: 0px 2px;
+}
+}
+
+/********************************************************************/
+/************************** MULTIMEDIA INDEX*************************/
+/********************************************************************/
+
+.multimedia-index {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.multimedia-texto h1{
+	font-size: 60px;
+	max-width: 550px;
+	line-height: 60px;
+	margin-bottom: 15px;
+	font-style: italic;
+}
+
+.multimedia-texto h3{
+	font-size: 30px;
+	max-width: 550px;
+	line-height: 30px;
+	color: gray;
+}
+
+.multimedia-img {
+	max-width: 500px;
+	padding: 0px 20px;
+}
+/****************************/
+
+@media (max-width: 999px) {
+.multimedia-index {
+	padding: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.multimedia-texto h1{
+	font-size: 60px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.multimedia-texto h3{
+	font-size: 30px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.multimedia-img {
+	max-width: 100%;
+	padding: 20px 20px;
+}
+
+/*************/
+
+@media (max-width: 768px) {
+.multimedia-texto h1{
+	font-size: 30px;
+	line-height: 30px;
+}
+.multimedia-texto h3{
+	font-size: 20px;
+	line-height: 20px;
+}
+
+}
+
+}
+
+/********************************************************************/
+/************************** PLUSSCHILE EMPRESAS *************************/
+/********************************************************************/
+
+.contenedor-convenios-redes {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0px 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.convenios-index {
+	max-width: 700px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.convenios-index h1 {
+	border-bottom: 2px solid #cccccc;
+}
+
+.convenios-index h2 {
+	font-weight: bold;
+	font-size: 83px;
+	display: block;
+	color: #3b4064;
+	padding-top: 20px;
+}
+
+.convenios-index h3 {
+	font-weight: 300;
+	font-size: 50px;
+	display: block;
+	color: gray;
+}
+
+.convenios-index ul {
+	padding: 20px 0px 20px 50px;
+
+}
+
+.convenios-index ul li {
+	font-weight: 300;
+	font-size: 30px;
+	color: #af9550;
+	padding: 10px 0px;
+}
+
+.convenios-index ul li span{
+	color: gray;
+}
+
+.redes-index {
+	width: 100%;
+	max-width: 400px;
+	padding-left: 50px;
+	display: block;
+}
+
+.redes-index h1{
+	border-bottom: 2px solid #cccccc;
+}
+
+.redes-index .facebook-plugin {
+	margin: auto;
+	margin-top: 30px;
+}
+
+.redes-index .twitter-plugin {
+	margin-top: 30px;
+}
+
+/******** solo responsivo *******/
+.redes-index-responsivo {
+	display: none;
+}
+
+
+
+/*************************************/
+
+@media (max-width: 1199px) {
+
+.convenios-index {
+	max-width: 500px;
+	width: 100%;
+}
+}
+/***********/
+
+@media (max-width: 999px) {
+
+.contenedor-convenios-redes {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.convenios-index {
+	margin: auto;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.redes-index {
+	max-width: 100%;
+	padding: 25px;
+	display: block;
+	margin: auto;
+}
+
+.redes-index .facebook-plugin {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.convenios-index h2 {
+	font-size: 50px;
+}
+
+.convenios-index h3 {
+	font-size: 30px;
+}
+
+}
+
+/*************/
+
+@media (max-width: 500px) {
+
+.contenedor-convenios-redes {
+	padding: 0px 25px;
+}
+.convenios-index h2 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.convenios-index h3 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.convenios-index ul {
+	padding: 20px 0px 20px 20px;
+
+}
+
+.convenios-index ul li {
+	font-size: 16px;
+	padding: 5px 0px;
+}
+
+.redes-index-responsivo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%
+}
+
+.redes-index-responsivo a{
+	font-size: 80px;
+	color: #af9550;
+	padding:10px;
+	margin: auto;
+}
+
+.redes-index-responsivo h1 {
+	width: 100%;
+	padding: 0px 20px;
+	border-bottom: 2px solid #cccccc;
+	display: block;
+	text-align: center;
+}
+
+.redes-index {
+	display: none;
+}
+
+}
+
+.imagen_ventas {
+    display: none;
+    position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+    /* Establecemos la barra en la izquierda */
+    right: 0;
+    bottom: 100px; /* Bajamos la barra 200px de arriba a abajo */
+    z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+@media (max-width: 800px) {
+    .hidden {
+        display: none;
+    }
+
+}

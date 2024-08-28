@@ -1,0 +1,118 @@
+.contenedor-politicas {
+	width: 100%;
+	max-width: 1160px;
+	margin: auto;
+	padding: 25px 20px;
+}
+
+.contenedor-politicas h1{
+	border-bottom: 2px solid #cccccc;
+	padding-top: 20px;
+}
+
+.contenedor-politicas p{
+	/*color: #666666;*/
+	padding: 10px 0px;
+	text-align: justify;
+}
+
+.contenedor-politicas ul{
+	padding-left: 40px;
+}
+
+.contenedor-politicas ul li{
+	padding: 10px;
+	color: #333333;
+	text-align: justify;
+}
+
+.contenedor-politicas ol{
+	padding-left: 40px;
+}
+
+.contenedor-politicas ol li{
+	padding: 10px;
+	color: #333333;
+	text-align: justify;
+}
+
+.contenedor-politicas h2{
+	font-style: italic;
+	color: #af9550;
+	display: block;
+	text-align: center;
+	padding: 15px;
+}
+
+/*
+.contenedor-politicas h3{
+	color: #af9550;
+	display: block;
+}
+*/
+
+.contenedor-politicas h3{
+	font-style: italic;
+	color: #3b4064;
+	display: block;
+	text-align: left;
+	padding: 5px 15px 0px 0px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+.contenedor-politicas img{
+	width: 100%;
+	height: auto;
+	border-radius: 25px;
+	padding: 10px;
+}
+
+.bajada-desierto {
+	margin-bottom: -30px;
+	width: 100%;
+	height: 170px;
+	background-image: url(../imagenes/bajada-pagina.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom; 
+	overflow: hidden;
+}
+
+@media (max-width: 600px) {
+
+
+.contenedor-politicas p{
+	padding: 10px 10px;
+	text-align: left;
+	font-size: 11px;
+}
+.contenedor-politicas ul{
+	padding: 0px 20px 0px 30px;
+}
+
+.contenedor-politicas ul li{
+	text-align: left;
+	font-size: 11px;
+}
+
+.contenedor-servicio h2{
+	font-size: 16px;
+}
+
+.bajada-desierto {
+	width: 100%;
+	height: 170px;
+	background-size: 300%;
+}
+}
+
+
+@media (max-width: 400px) {
+
+.bajada-desierto {
+	width: 100%;
+	height: 170px;
+	background-size: 500%;
+}
+}

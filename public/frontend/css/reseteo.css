@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document By Fizz Estudio Gráfico - www.fizz.cl */
+
+/****** BODY ****/
+* {
+	margin:0; 
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+	}
+
+/* VARIABLE SETS */
+h1, h2, h3, h4, h5, h6 { margin: 0px; padding: 0px; letter-spacing: -0.03em; font-weight: 400; }
+a { text-decoration: none;}
+a:hover { text-decoration: underline; }
+a:active{outline:none}
+a:focus{outline:thin dotted}
+
+/****** TRANSICION ****/
+a, a:hover, img, img:hover, input[type=submit], input[type=button], input[type=reset],a.btn, btn, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, a.btn, a.btn:hover, btn, btn:hover,.productos-mod,.productos-mod:hover,#faq h3,#faq h3:hover,.busqueda-mod,.busqueda-mod:hover, .busqueda-mod img
+{-webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}
+
+/****** SIN TRANSICION ****/
+.slider a {-webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none;}
+
+
+.borde-redondeado {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	}
+	
+.borde-redondeado-blanco {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border:#FFF solid 1px;
+	}
+
+.img-responsive {
+	width:100%;
+	height:auto;
+	}
+
+.clear {
+	clear: both;
+}
+
+strong {
+	font-weight: 900;
+}
+
+/* DIV donde se alojará el iframe de YouTube */
+.responsive-embed-youtube {
+position: relative;
+padding-bottom: 56.25%; /* mantiene la vista en 16:9 */
+padding-top: 25px;
+height: 0;
+}
+/* Ancho y Alto del iframe al 100% */
+.responsive-embed-youtube iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%!important;
+height: 100%!important;
+}
+
+.franja-dorada img {
+	width: 100%;
+	margin: auto;
+	height: auto;
+	max-width: 1200px;
+}
+
+.boton-pluss {
+	padding:7px 10px 10px 10px;
+	background-image: linear-gradient(to bottom right, #B59A43 0%, #DEBB49 50%, #B59A43 100%);
+	color:#FFF;
+	border-radius: 5px;
+	font-weight:bold;
+	font-size:18px;
+}
+
+.boton-pluss:hover {
+	background-image: linear-gradient(to bottom right, #4D4D4D 0%, #6B6B6B 100%);
+}
+
+/*********** reseteo ***************/
+
+h1 {
+	font-weight: bold;
+	font-size: 30px;
+	display: block;
+	color: #af9550;
+	font-style: italic;
+}
+
+p, ul, li {
+	color: #242424;
+	font-size: 18px;
+}
+
+@media (max-width: 400px) {
+h1 {
+	text-align: center;
+}
+}

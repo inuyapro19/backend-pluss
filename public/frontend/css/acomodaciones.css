@@ -1,0 +1,182 @@
+.contenedor-acomodaciones {
+	width: 100%;
+	max-width: 1160px;
+	margin: auto;
+	padding: 25px 20px;
+}
+
+.contenedor-acomodaciones h1{
+	border-bottom: 2px solid #cccccc;
+	padding-top: 20px;
+}
+
+.contenedor-acomodaciones p{
+	/*color: #333333;*/
+	padding: 10px 0px;
+	text-align: justify;
+}
+
+.contenedor-acomodaciones ul{
+	padding-left: 40px;
+}
+
+.contenedor-acomodaciones ul li{
+	padding: 5px;
+	color: #333333;
+	text-align: justify;
+}
+
+.contenedor-acomodaciones h2{
+	font-style: italic;
+	color: #af9550;
+	display: block;
+	text-align: left;
+	padding: 25px 15px 15px 0px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.contenedor-acomodaciones h3{
+	font-style: italic;
+	color: #3b4064;
+	display: block;
+	text-align: left;
+	padding: 40px 15px 0px 0px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.contenedor-acomodaciones h4{
+	font-style: italic;
+	color: #3b4064;
+	display: block;
+	text-align: left;
+	padding: 5px 15px 0px 0px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.contenedor-acomodaciones ul{
+	padding: 10px 5px 10px 40px;
+}
+
+.contenedor-acomodaciones ul li{
+	padding: 5px;
+	color: #333333;
+	text-align: justify;
+}
+
+.acomodaciones-flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.caja-acomodaciones {
+	padding-bottom: 25px;
+	width: 100%;
+	max-width: 600px;
+}
+
+.fotos-acomodaciones {
+	width: 100%;
+	max-width: 500px;
+	margin-left: 50px;
+}
+
+.fotos-acomodaciones img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-top: 40px;
+	min-width: 400px
+}
+
+.linea-punteada-acomodaciones {
+	height: 5px;
+	border-bottom: 2px dashed #cccccc;
+	margin-top: 30px;
+}
+
+.bajada-desierto {
+	margin-bottom: -30px;
+	width: 100%;
+	height: 170px;
+	background-image: url(../imagenes/bajada-pagina.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom; 
+	overflow: hidden;
+}
+
+@media (max-width: 900px) {
+
+.acomodaciones-flexbox {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.caja-acomodaciones {
+	padding-bottom: 25px;
+	width: 100%;
+	max-width: none;
+}
+.fotos-acomodaciones {
+	width: 100%;
+	max-width: 600px;
+	margin-left: 0px;
+}
+}
+
+@media (max-width: 600px) {
+
+.contenedor-acomodaciones h1{
+	text-align: center;
+}
+
+.contenedor-acomodaciones h2{
+	text-align: center;
+}
+
+.contenedor-acomodaciones h3{
+	text-align: center;
+}
+
+.contenedor-acomodaciones p{
+	color: #333333;
+	padding: 10px 10px;
+	text-align: left;
+	font-size: 11px;
+}
+.contenedor-acomodaciones ul{
+	padding: 0px 20px 0px 30px;
+}
+
+.contenedor-acomodaciones ul li{
+	text-align: left;
+	font-size: 11px;
+	padding: 2px 0px 2px 0px;
+}
+
+.fotos-acomodaciones img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-top: 40px;
+	min-width: 100%;
+}
+
+.bajada-desierto {
+	width: 100%;
+	height: 170px;
+	background-size: 300%;
+}
+}
+
+@media (max-width: 400px) {
+
+.bajada-desierto {
+	width: 100%;
+	height: 170px;
+	background-size: 500%;
+}
+}
